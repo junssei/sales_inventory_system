@@ -10,7 +10,9 @@ if($title == 'Register'){
 }
 
 if($title == 'Dashboard'){
-    // echo '<link rel="stylesheet" href="css/style.css">';
+    echo '<script src="js/index.js"></script>';
 }
+
+echo '<script src="js/main.js"></script>';
 
 ?>

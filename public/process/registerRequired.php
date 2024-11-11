@@ -7,9 +7,11 @@ $specialchar= preg_match("@[^\w]@", $password);
 if(!empty($_POST['firstname'])){
     $_SESSION['regfirstname'] = $firstname;
 }
+
 if(!empty($_POST['lastname'])){
     $_SESSION['reglastname'] = $lastname;
 }
+
 if(!empty($_POST['username'])){
     $_SESSION['regusername'] = $username;
 }
