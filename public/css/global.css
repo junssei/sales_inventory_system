@@ -1,0 +1,76 @@
+@import url(style.css);
+
+*{
+    font-family: "Poppins", serif;
+    font-style: normal;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: var(--white2);
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+a{
+    text-decoration: underline transparent;
+    transition: text-decoration 300ms ease;
+    color: var(--black);
+}
+
+.logo{
+    height: 64px;
+    width: 64px;
+}
+
+.icon:hover{
+    cursor: pointer;
+}
+
+/* Input */
+input[type="submit"]:hover{
+    cursor: pointer;
+}
+
+/* Error Message */
+.errormessage{
+    margin-bottom: 24px;
+    text-align: center;
+    color: var(--red);
+}
+
+/* Notification & Animation */
+@keyframes popuphide{
+    0% 	{ opacity: 0; visibility: visible;}
+	10% { opacity: 1; }
+	90% { opacity: 1;
+        top: 8%;
+        left: 50%;
+        /* transform: translate(-50%, -50%); */
+    }
+	99% { opacity: 0; 
+        top: 13%;
+        left: 50%;
+        /* transform: translate(-50%, -50%); */
+        }
+	100% { opacity: 0; visibility: hidden;}
+}
+
+.popupnotification{
+    top: 0%;
+    left: 50%;
+    padding: 32px;
+    display: block;
+    text-align: center;
+    visibility: hidden;
+    position: absolute;
+    border-radius: 14px;
+    background-color: var(--gray3);
+    transform: translate(-50%, -50%);
+    animation-name: popuphide;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+}

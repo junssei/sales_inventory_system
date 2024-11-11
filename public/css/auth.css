@@ -1,0 +1,235 @@
+@import url(style.css);
+
+@media only screen and (min-width: 501px){
+    #container{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        position: relative;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #subcontainer{
+        height: auto;
+        display: flex;
+        padding: 36px;
+        min-width: 420px;
+        max-width: 524px;
+        user-select: none;
+        border-radius: 24px;
+        flex-direction: column;
+        background-color: var(--white);
+    }
+}
+
+#subcontainer #header, #auth_action{
+    margin-bottom: 42px;
+    margin-top: 24px;
+}
+
+#subcontainer #header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#subcontainer #header h1{
+    font-weight: 700;
+}
+
+#subcontainer #header img{
+    position: absolute;
+    left: 30px;
+    top: 27px;
+}
+
+#subcontainer span p{
+    text-align: center;
+}
+
+#subcontainer span p a{
+    color: var(--blue);
+}
+
+#subcontainer form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#subcontainer form #auth_input{
+    display: flex;
+    flex-direction: column;
+}
+
+#subcontainer form input::placeholder{
+    font-weight: 200;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+#subcontainer form #input_username, #subcontainer form #input_password, #subcontainer form #inputfullname{
+    margin-bottom: 24px;
+}
+
+#subcontainer form input[type="text"], input[type="password"],
+input[type="email"]{
+    width: 100%;
+    border: none;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 16px 64px 16px 24px;
+    border-radius: 14px;
+    background-color: var(--blue3);
+}
+
+#subcontainer form input[type="text"]:focus, input[type="password"]:focus{
+    background-color: var(--white);
+    outline-color: var(--blue);
+}
+
+#subcontainer form #input_username, #subcontainer form #input_email{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+#subcontainer form #input_password{
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 14px;
+}
+
+#subcontainer form #input_password img{
+    width: 24px;
+    height: 24px;
+    right: 1.2em;
+    position: absolute;
+}
+
+#subcontainer form #auth_action{
+    display: flex;
+    justify-content: space-between;
+}
+
+#subcontainer form input[type="submit"]{
+    background-color: var(--blue);
+    color: var(--white);
+    border: none;
+    /* padding: 10px 25px 10px 25px; */
+    width: 110px;
+    height: 50px;
+    text-align: center;
+    border-radius: 14px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#subcontainer form input[type="submit"]:hover{
+    background-color: var(--blue2);
+}
+
+/* Hover */
+#subcontainer form #auth_action a:hover, #subcontainer span p a:hover{
+    color: var(--blue);
+    text-decoration-thickness: 2px;
+    text-decoration-color: var(--blue);
+}
+
+/* Register Section */
+#subcontainer form #auth_input #inputfullname{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#subcontainer form #auth_input #inputfullname input{
+    width: 30%;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1000px) {
+    #subcontainer form #auth_input #inputfullname{
+        display: flex;
+        margin-bottom: 0px;
+        flex-direction: column;
+    }
+
+    #subcontainer form #auth_input #inputfullname input{
+        width: auto;
+        margin-bottom: 24px;
+    }
+
+    #subcontainer #header img{
+        width: 64px;
+        height: 64px;
+        position: static;
+    }
+  }
+
+@media only screen and (max-width: 500px) and (min-height: 500px){
+    #container{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        /* position: relative; */
+        /* align-items: center; */
+        flex-direction: column;
+        justify-content: center;
+        background-color: var(--white);
+    }
+    
+    #subcontainer{
+        /* min-width: 420px; */
+        /* max-width: auto; */
+        /* height: 100%; */
+        display: flex;
+        padding: 36px;
+        user-select: none;
+        /* border-radius: 24px; */
+        flex-direction: column;
+        /* background-color: #EEEEEE; */
+    }
+}
+
+/* Register */
+#message {
+    display:none;
+    color: #000;
+    position: relative;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  #message span {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+  
+  /* Add a green text color and a checkmark when the requirements are right */
+  .valid {
+    color: green;
+  }
+  
+  .valid:before {
+    position: relative;
+    /* left: -10px; */
+    content: "✔";
+  }
+  
+  /* Add a red text color and an "x" icon when the requirements are wrong */
+  .invalid {
+    color: var(--red);
+  }
+  
+  .invalid:before {
+    position: relative;
+    /* left: -10px; */
+    content: "✖";
+  }
