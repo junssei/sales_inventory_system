@@ -1,6 +1,7 @@
 <?php
 session_start();
 $title = 'Login';
+$_SESSION['loggedin'] = 0;
 include 'process/header.php'; 
 ?>
     <div id="container">

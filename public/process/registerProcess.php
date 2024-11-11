@@ -12,7 +12,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $role = "unassigned";
 
     include 'registerRequired.php';
-
     $hashedPassword = password_hash($password, PASSWORD_BCRYPT);
     $sql = "INSERT INTO admin(firstname, lastname, username, password, email, role) VALUES('$firstname', '$lastname', '$username', '$hashedPassword', '$email', '$role')";
     $signup = mysqli_query($conn, $sql);

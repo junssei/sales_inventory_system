@@ -21,8 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             exit();
         } else {
             $_SESSION['loggedin'] = true;
-            $_SESSION['role'] = $row['role'];
-            $_SESSION['username'] = $row['username'];
+            $_SESSION['admidID'] = $row['admin_id'];
             $_SESSION['notification'] = "Login Successfully!";
             header('Location: ../index.php');
             exit();

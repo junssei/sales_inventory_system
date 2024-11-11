@@ -1,7 +1,7 @@
 <div id="side_navbar">
         <div id="navbar_main">
             <div id="navbar_logo">
-                <img src="_img/horizontal/DefaultNoSkinTPHRZTL.png">
+                <img src="_img/horizontal/ColoredNoSkinTPHRZTL.png">
             </div>
             <div class="navbar_menus">
                 <!--[icon, menu name] dropdown (optional) -->

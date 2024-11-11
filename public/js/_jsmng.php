@@ -1,7 +1,7 @@
 <?php
 
 if($title == 'Login'){
-    // echo '<link rel="stylesheet" href="css/auth.css">';
+    echo '<script src="js/auth.js"></script>';
 }
 
 if($title == 'Register'){
