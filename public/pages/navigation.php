@@ -5,19 +5,19 @@
             </div>
             <div class="navbar_menus">
                 <!--[icon, menu name] dropdown (optional) -->
-                <a href="" class="menu dashboard active">
+                <a href="index.php" class="menu dashboard <?php if($title == "Dashboard") echo "active"?> ">
                     <span><img class="icon menu_icon" src="_img/icon/default_dashboard.png"><p> Dashboard </p></span>
                     <!-- <img class="icon dropdown" src="_img/icon/dropdown.png"> -->
                 </a>
-                <a href="" class="menu product ">
+                <a href="product.php" class="menu product <?php if($title == "Product") echo "active"?>">
                     <span><img class="icon menu_icon" src="_img/icon/default_boxes.png"><p> Inventory </p></span>
                     <!-- <img class="icon dropdown" src="_img/icon/dropdown.png"> -->
                 </a>
-                <a href="" class="menu report ">
+                <a href="report.php" class="menu report <?php if($title == "Report") echo "active"?>">
                     <span><img class="icon menu_icon" src="_img/icon/default_analytics.png"><p> Report </p></span>
                     <img class="icon dropdown" src="_img/icon/dropdown.png">
                 </a>
-                <a href="" class="menu customer ">
+                <a href="customer.php" class="menu customer <?php if($title == "Customer") echo "active"?>">
                     <span><img class="icon menu_icon" src="_img/icon/default_people.png"><p> Customer </p></span>
                     <img class="icon dropdown" src="_img/icon/dropdown.png">
                 </a>

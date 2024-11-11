@@ -11,6 +11,7 @@
 body{
     background-color: var(--white2);
     position: relative;
+    overflow: hidden;
     height: 100%;
     width: 100%;
 }
@@ -19,6 +20,10 @@ a{
     text-decoration: underline transparent;
     transition: text-decoration 300ms ease;
     color: var(--black);
+}
+
+.breadcrumbs{
+    color: var(--gray3);
 }
 
 .logo{
