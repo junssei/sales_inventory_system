@@ -9,13 +9,13 @@
                     <span><img class="icon menu_icon" src="_img/icon/default_dashboard.png"><p> Dashboard </p></span>
                     <!-- <img class="icon dropdown" src="_img/icon/dropdown.png"> -->
                 </a>
-                <a href="product.php" class="menu product <?php if($title == "Product") echo "active"?>">
+                <a href="product.php" class="menu dropdown product <?php if($title == "Product") echo "active"?>">
                     <span><img class="icon menu_icon" src="_img/icon/default_boxes.png"><p> Inventory </p></span>
-                    <!-- <img class="icon dropdown" src="_img/icon/dropdown.png"> -->
+                    <img class="icon dropdown" src="_img/icon/dropdown.png">
                 </a>
                 <a href="report.php" class="menu report <?php if($title == "Report") echo "active"?>">
                     <span><img class="icon menu_icon" src="_img/icon/default_analytics.png"><p> Report </p></span>
-                    <img class="icon dropdown" src="_img/icon/dropdown.png">
+                    <!-- <img class="icon dropdown" src="_img/icon/dropdown.png"> -->
                 </a>
                 <a href="customer.php" class="menu customer <?php if($title == "Customer") echo "active"?>">
                     <span><img class="icon menu_icon" src="_img/icon/default_people.png"><p> Customer </p></span>

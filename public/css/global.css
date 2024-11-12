@@ -23,6 +23,7 @@ a{
 }
 
 .breadcrumbs{
+    text-transform: capitalize;
     color: var(--gray3);
 }
 
@@ -31,8 +32,24 @@ a{
     width: 64px;
 }
 
-.icon:hover{
+.icon:hover, .button:hover{
     cursor: pointer;
+}
+
+/* Button */
+.button{
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+}
+
+.addbtn{
+    color: white;
+    background-color: var(--blue);
+}
+
+.addbtn:hover{
+    background-color: var(--blue2);
 }
 
 /* Input */
@@ -67,6 +84,7 @@ input[type="submit"]:hover{
 .popupnotification{
     top: 0%;
     left: 50%;
+    z-index: 1;
     padding: 32px;
     display: block;
     text-align: center;

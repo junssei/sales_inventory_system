@@ -8,7 +8,7 @@ if($title == 'Register'){
     echo '<link rel="stylesheet" href="css/auth.css">';
 }
 
-if($title == 'Dashboard'){
+if($title == 'Dashboard' || "Product" || "Report" || "Customer"){
     echo '<link rel="stylesheet" href="css/index.css">';
 }
 

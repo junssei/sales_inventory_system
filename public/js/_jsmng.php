@@ -9,7 +9,7 @@ if($title == 'Register'){
     echo '<script src="js/auth.js"></script>';
 }
 
-if($title == 'Dashboard'){
+if($title == 'Dashboard' || "Product" || "Report" || "Customer"){
     echo '<script src="js/index.js"></script>';
 }
 

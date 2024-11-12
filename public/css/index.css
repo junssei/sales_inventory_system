@@ -29,6 +29,7 @@
     margin-bottom: 32px;
     position: relative;
     align-items: center;
+    justify-content: center;
 }
 
 #navbar_logo img{
@@ -77,7 +78,7 @@
     background-color: var(--blue);
 }
 
-.navbar_menus > .menu:hover span img, .navbar_actions > .action:hover span img{
+.navbar_menus > .menu:hover span img, .navbar_actions > .action:hover span img, .navbar_menus > .menu:hover .dropdown{
     filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(2350%) hue-rotate(349deg) brightness(122%) contrast(103%);
 }
 
@@ -162,6 +163,13 @@
     display: flex;
     padding: 24px;
     flex-direction: column;
+}
+
+.body_pages > .pages_infoact{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .body_pages > .pages_content{

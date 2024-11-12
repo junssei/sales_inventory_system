@@ -14,15 +14,15 @@ input_firstNAME.setAttribute("minlength", "3");
 input_firstNAME.setAttribute("maxlength", "14");
 
 function passwordVisibility() {
-    var x = document.getElementById("mypassword");
-    var y = document.getElementById("mypasswordicon");
-    if (x.type === "password") {
-      x.type = "text";
-      y.src = "_img/icon/visibility.png";
-    } else {
-      x.type = "password";
-      y.src ="_img/icon/visibilityoff.png"; 
-    }
+  var x = document.getElementById("mypassword");
+  var y = document.getElementById("mypasswordicon");
+  if (x.type === "password") {
+    x.type = "text";
+    y.src = "_img/icon/visibility.png";
+  } else {
+    x.type = "password";
+    y.src ="_img/icon/visibilityoff.png"; 
   }
+}
 
 // Popup
