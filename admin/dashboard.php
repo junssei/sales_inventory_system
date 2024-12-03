@@ -24,7 +24,7 @@ if (isset($_SESSION['notification'])){
                 <div class="pages_infoact">
                     <div class="breadcrumbs">/<?php 
                     $path = basename($_SERVER['PHP_SELF'],".php");
-                    if($path == "index") { echo "Dashboard"; } else { echo $path; }
+                    echo $path; 
                     ?>
                     </div>
                     <!-- <button class="button addbtn"> Add </button> -->

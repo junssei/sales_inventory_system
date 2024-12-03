@@ -5,7 +5,7 @@
             </div>
             <div class="navbar_menus">
                 <!--[icon, menu name] dropdown (optional) -->
-                <a href="index.php" class="menu dashboard <?php if($title == "Dashboard") echo "active"?> ">
+                <a href="dashboard.php" class="menu dashboard <?php if($title == "Dashboard") echo "active"?> ">
                     <span><img class="icon menu_icon" src="_img/icon/default_dashboard.png"><p> Dashboard </p></span>
                     <!-- <img class="icon dropdown" src="_img/icon/dropdown.png"> -->
                 </a>

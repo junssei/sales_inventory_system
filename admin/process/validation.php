@@ -3,7 +3,7 @@ include 'connectdb.php';
 session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    session_unset();
+    session_unset();    
     $username = $_POST["email"];
     $password = $_POST["password"];
 
@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['loggedin'] = true;
             $_SESSION['admidID'] = $row['admin_id'];
             $_SESSION['notification'] = "Login Successfully!";
-            header('Location: ../index.php');
+            header('Location: ../dashboard.php');
             exit();
         }
     } else {
